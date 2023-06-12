@@ -20,7 +20,6 @@ Moderator *createModerator(char *password) {
     Moderator *moderator = (Moderator *) malloc(sizeof(Moderator));
     if (moderator == NULL) {
         printf("Invalid User.\n");
-        login();
     }
     moderator->password = password;
     moderator->accessToSports = sports; // Give moderator full access
