@@ -103,7 +103,6 @@ Member *createMember() {
     Member *member = (Member *) malloc(sizeof(Member));
     if (member == NULL) {
         printf("Invalid User.\n");
-        login();
     }
     member->borrowedItems = (struct Item **) malloc(sizeof(struct Item *));
     member->numItems = 0;
