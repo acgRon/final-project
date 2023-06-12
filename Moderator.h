@@ -1,0 +1,13 @@
+Moderator *createModerator(char *password);
+void deleteModerator(Moderator *moderator);
+void printItems(Moderator *moderator);
+struct Item *createItem(char *name, int quantity);
+struct Item* minValueNode(struct Item* node);
+struct Item* deleteNode(struct Item* root, char *name);
+void addItem(struct Sport *sport, char *name, int quantity);
+void deleteItem(struct Sport *sport, char *name);
+void freeItem(struct Item* item);
+struct Item *findItem(struct Item *root, char *name);
+void checkBorrowedStatus(Moderator *moderator, char *sportName, char *itemName);
+void importItemsFromFile(char *filename);
+void exportItemsToFile(char *filename);

@@ -1,0 +1,11 @@
+User *login();
+struct Sport *findSport(char *name);
+void borrowItem(Member *member, char *sportName, char *itemName);
+void returnItem(Member *member, char *itemName);
+Member *createMember();
+void deleteMember(Member *member);
+void addSport(char *name);
+void freeSport(struct Sport* sport);
+void cleanup();
+int hash(char *str);
+void continueOrExit();
